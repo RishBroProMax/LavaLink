@@ -4,11 +4,9 @@ import time
 
 app = Flask(__name__)
 
-# Get the uptime of the system
 def get_uptime():
     return time.time() - psutil.boot_time()
 
-# Get network speed (placeholder, as calculating real-time speed requires more complex setup)
 def get_network_speed():
     return {"upload": "N/A", "download": "N/A"}
 
